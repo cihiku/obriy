@@ -15,7 +15,7 @@ vanilla assets are fetched from official sources at runtime by their owner.
 
 # MSRV
 
-1.97
+1.98
 
 # License
 

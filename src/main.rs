@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 
-pub fn main() {
+pub fn main() -> AppExit {
     App::new()
         .add_plugins(DefaultPlugins.set(WindowPlugin {
             primary_window: Some(Window {
@@ -11,7 +11,7 @@ pub fn main() {
             ..default()
         }))
         .add_systems(Startup, init.spawn())
-        .run();
+        .run()
 }
 
 pub fn init() -> impl SceneList {
